@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: discovery-server
+
+server:
+  port: 8888
+
+eureka:
+  server:
+    eviction-interval-timer-in-ms: 1500
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+
+logging:
+  level:
+    com.netflix.eureka: OFF
+    com.netflix.discovery: OFF
