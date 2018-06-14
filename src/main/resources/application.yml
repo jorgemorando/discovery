@@ -6,8 +6,10 @@ server:
   port: 8888
 
 eureka:
+  instance:
+    prefer-ip-address: true
   server:
-    eviction-interval-timer-in-ms: 1500
+    eviction-interval-timer-in-ms: 1000
   client:
     register-with-eureka: false
     fetch-registry: false
